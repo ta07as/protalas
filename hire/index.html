@@ -2,87 +2,184 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AKIM.PRO — ВСТУПАЙ В КОМАНДУ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа Электриком Талас — Стань частью команды AKIM.PRO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=Manrope:wght@400;800&display=swap');
-        body { background: #000; color: #fff; font-family: 'Manrope', sans-serif; padding-bottom: 90px; }
-        .font-unbounded { font-family: 'Unbounded', sans-serif; }
-        .sw-btn { flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 10px; font-weight: 900; color: #fff; text-decoration: none; border-right: 1px solid #222; gap: 4px; }
-        .active-hire { background: #eab308; color: #000; }
-        .hire-card { border: 2px dashed #eab308; padding: 25px; border-radius: 24px; background: rgba(234, 179, 8, 0.05); }
-        .accent-text { color: #eab308; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap');
+        :root { --bg: #050505; --card: #0f0f0f; --blue: #3b82f6; --text-dim: #64748b; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #f8fafc; scroll-behavior: smooth; overflow-x: hidden; }
+        .glass-card { background: var(--card); border: 1px solid rgba(255, 255, 255, 0.03); transition: all 0.5s ease; }
+        .glass-card:hover { border-color: var(--blue); transform: translateY(-10px); background: #141414; }
+        .reveal { visibility: hidden; }
+        .accent-bar { height: 4px; width: 80px; background: var(--blue); border-radius: 2px; }
+        .num-outline { -webkit-text-stroke: 1px rgba(59, 130, 246, 0.3); color: transparent; font-size: 100px; font-weight: 900; line-height: 1; }
     </style>
 </head>
 <body>
 
-    <section class="min-h-[70vh] bg-yellow-500 text-black p-8 flex flex-col justify-end">
-        <h1 class="text-7xl font-unbounded italic uppercase leading-[0.8] mb-6">Нужны <br>люди</h1>
-        <p class="text-2xl font-black uppercase border-b-8 border-black pb-2 inline-block">AKIM.PRO TEAM — ТАЛАС</p>
-    </section>
-
-    <div class="p-5 mt-[-45px]">
-        <a href="https://wa.me/996755000228" class="block bg-black text-yellow-500 p-8 text-center font-unbounded text-2xl uppercase italic border-4 border-yellow-500 shadow-2xl">СТАТЬ ПАРТНЕРОМ</a>
-    </div>
-
-    <section class="p-10 text-center bg-white/5 mx-5 rounded-3xl mt-10">
-        <h2 class="text-4xl font-unbounded accent-text mb-4 italic uppercase">Твои 60%</h2>
-        <p class="text-gray-300 font-bold uppercase italic text-sm tracking-widest">Я не ищу рабочих. Я ищу мастеров. Работаем честно: сделал — получил.</p>
-    </section>
-
-    <section class="p-5 space-y-6 py-10">
-        <div class="hire-card">
-            <h3 class="text-2xl font-black accent-text uppercase mb-2 italic">Инструмент TOP-уровня</h3>
-            <p class="text-gray-400">Забудь про дешевые дрели. Даю Hilti, Milwaukee, Bosch. Штробим без пыли, сверлим быстро.</p>
+    <header class="fixed top-0 w-full z-[1000] bg-[#050505]/90 backdrop-blur-xl border-b border-white/5 px-6 py-5 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] flex items-center justify-center text-white italic font-black text-xl">A</div>
+            <span class="font-black tracking-tighter text-xl uppercase italic">AKIM.PRO <span class="text-blue-500">HIRE</span></span>
         </div>
-        
-        <div class="hire-card">
-            <h3 class="text-2xl font-black accent-text uppercase mb-2 italic">Денежный поток</h3>
-            <p class="text-gray-400">У меня огромный поток заявок в Таласе: от срочных аварий до элитных коттеджей.</p>
+        <div class="flex items-center gap-4">
+            <a href="tel:+996755000228" class="hidden sm:block text-sm font-bold text-blue-400">+996 755 000 228</a>
+            <a href="https://wa.me/996755000228" class="bg-blue-600 text-white px-6 py-2 rounded-xl text-xs font-black uppercase tracking-widest hover:scale-105 transition-all">Пиши нам</a>
         </div>
+    </header>
 
-        <div class="hire-card">
-            <h3 class="text-2xl font-black accent-text uppercase mb-2 italic">Обучение</h3>
-            <p class="text-gray-400">Научу работать по чертежам, собирать сложные щиты и работать с умным домом.</p>
+    <section class="min-h-screen flex flex-col justify-center px-6 pt-20 max-w-7xl mx-auto relative">
+        <div class="reveal accent-bar mb-8"></div>
+        <h1 class="reveal text-6xl md:text-[120px] font-black uppercase leading-[0.85] mb-10 italic">НУЖНЫ <br> <span class="text-blue-600">ЛУЧШИЕ</span> <br> РУКИ</h1>
+        <p class="reveal text-slate-400 text-xl md:text-3xl leading-relaxed mb-12 max-w-3xl italic font-light">
+            Мы не просто бригада, мы создаем надежную сеть электроснабжения Таласа. Если ты мастер своего дела — мы ждем тебя.
+        </p>
+        <div class="reveal flex flex-col sm:flex-row gap-6">
+            <a href="tel:+996755000228" class="bg-blue-600 text-white px-12 py-7 rounded-2xl font-black uppercase text-sm tracking-[0.3em] shadow-2xl shadow-blue-600/40 text-center">Стать частью команды</a>
+            <a href="#rules" class="glass-card px-12 py-7 rounded-2xl font-black uppercase text-sm tracking-[0.3em] text-center border border-white/10 italic">Наши условия</a>
         </div>
     </section>
 
-    <section class="p-10 bg-yellow-500 text-black mt-10 italic">
-        <h2 class="text-3xl font-unbounded mb-6 uppercase leading-none">Мимо, если ты:</h2>
-        <ul class="text-xl font-black space-y-3 uppercase">
-            <li>— Выпиваешь (сразу прощаемся)</li>
-            <li>— Опаздываешь на объекты</li>
-            <li>— Делаешь "тяп-ляп"</li>
-            <li>— Не берешь трубку</li>
-        </ul>
+    <section class="py-32 px-6 bg-[#080808] border-y border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="reveal">
+                <span class="num-outline">01</span>
+                <h3 class="text-2xl font-black uppercase italic mb-6">ДЕНЬГИ СРАЗУ</h3>
+                <p class="text-slate-500 italic leading-relaxed">Оплата за каждый закрытый этап. Никаких ожиданий «когда заказчик закроет акт». Мы платим вовремя.</p>
+            </div>
+            <div class="reveal">
+                <span class="num-outline">02</span>
+                <h3 class="text-2xl font-black uppercase italic mb-6">УВАЖЕНИЕ</h3>
+                <p class="text-slate-500 italic leading-relaxed">Я сам электрик и знаю, какой это труд. Никакого хамства, только профессиональное отношение.</p>
+            </div>
+            <div class="reveal">
+                <span class="num-outline">03</span>
+                <h3 class="text-2xl font-black uppercase italic mb-6">РОСТ</h3>
+                <p class="text-slate-500 italic leading-relaxed">Пришел помощником — стал мастером. Даем сложные задачи, на которых ты растешь как профи.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="p-10 text-center italic py-20">
-        <p class="text-2xl font-black opacity-80 uppercase leading-tight">"Мы создаем самую мощную команду электриков в Таласе. Либо ты с лучшими, либо ты один."</p>
+    <section id="rules" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div class="reveal order-2 md:order-1">
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic mb-12 border-l-8 border-blue-600 pl-8">КОГО МЫ <br> ИЩЕМ?</h2>
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 glass-card rounded-xl flex items-center justify-center text-blue-500 shrink-0"><i class="fas fa-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg uppercase italic mb-2">Знание ПУЭ и СНиП</h4>
+                            <p class="text-slate-500 text-sm italic">Ты должен знать, почему нельзя кидать кабель по диагонали и как затягивать клеммы.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 glass-card rounded-xl flex items-center justify-center text-blue-500 shrink-0"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg uppercase italic mb-2">Пунктуальность</h4>
+                            <p class="text-slate-500 text-sm italic">Если рабочий день с 8:00, в 8:05 мы уже работаем. Время — это деньги прораба и наши.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 glass-card rounded-xl flex items-center justify-center text-red-600 shrink-0"><i class="fas fa-wine-glass-alt"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg uppercase italic mb-2 text-red-500">Трезвость</h4>
+                            <p class="text-slate-500 text-sm italic">Увидел запах перегара — попрощались. Электрика и алкоголь несовместимы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal order-1 md:order-2">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800" class="rounded-[60px] grayscale hover:grayscale-0 transition-all duration-1000 border border-white/5 shadow-2xl">
+                    <div class="absolute -bottom-10 -right-10 glass-card p-10 rounded-3xl hidden md:block">
+                        <p class="text-5xl font-black text-blue-600 italic">24/7</p>
+                        <p class="text-[10px] font-bold uppercase tracking-widest mt-2 italic">Работаем <br> на совесть</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="p-10 border-t border-white/10 text-center">
-        <p class="text-gray-500 uppercase text-xs mb-4 italic">Пиши напрямую Акиму:</p>
-        <b class="text-2xl accent-text">+996 755 000 228</b>
+    <section class="py-32 bg-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="reveal text-4xl font-black uppercase italic mb-16 italic">ОБЕСПЕЧИМ ВСЕМ <br> НЕОБХОДИМЫМ</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="reveal glass-card p-8 rounded-3xl italic">
+                    <i class="fas fa-bolt text-3xl text-blue-500 mb-4"></i>
+                    <p class="text-xs uppercase font-bold tracking-widest">Проф. тестеры Fluke</p>
+                </div>
+                <div class="reveal glass-card p-8 rounded-3xl italic">
+                    <i class="fas fa-tools text-3xl text-blue-500 mb-4"></i>
+                    <p class="text-xs uppercase font-bold tracking-widest">Перфораторы Makita</p>
+                </div>
+                <div class="reveal glass-card p-8 rounded-3xl italic">
+                    <i class="fas fa-wind text-3xl text-blue-500 mb-4"></i>
+                    <p class="text-xs uppercase font-bold tracking-widest">Пылесосы Bosch</p>
+                </div>
+                <div class="reveal glass-card p-8 rounded-3xl italic">
+                    <i class="fas fa-tshirt text-3xl text-blue-500 mb-4"></i>
+                    <p class="text-xs uppercase font-bold tracking-widest">Фирменная роба</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="p-10 text-center opacity-30 text-[10px] uppercase font-bold tracking-widest">
-        © 2026 AKIM.PRO HR DIVISION — TALAS REGION
+    <section class="py-32 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="reveal text-3xl font-black uppercase mb-8 italic">ГДЕ РАБОТАЕМ?</h2>
+        <p class="reveal text-slate-500 text-lg italic mb-12">Талас и вся Таласская область. Есть объекты в Манасе, Кара-Бууре и Бакай-Ате. Организуем транспорт до объекта.</p>
+        <div class="flex flex-wrap justify-center gap-4 opacity-30 italic">
+            <span>#ТАЛАС</span> <span>#МАНАС</span> <span>#БАКАЙ-АТА</span> <span>#КАРА-БУУРА</span>
+        </div>
+    </section>
+
+    <section class="py-32 px-6">
+        <div class="max-w-4xl mx-auto glass-card p-12 md:p-20 rounded-[60px] relative overflow-hidden">
+            <h2 class="text-4xl font-black mb-12 italic uppercase text-center">Частые вопросы</h2>
+            <div class="space-y-8">
+                <div class="reveal border-b border-white/5 pb-6">
+                    <h4 class="font-bold text-blue-500 mb-2 uppercase text-sm">Нужен ли свой инструмент?</h4>
+                    <p class="text-slate-500 text-sm italic">Желательно иметь личный базовый набор, но крупный и дорогой инструмент (штроборез, пылесос) мы выдаем.</p>
+                </div>
+                <div class="reveal border-b border-white/5 pb-6">
+                    <h4 class="font-bold text-blue-500 mb-2 uppercase text-sm">Как происходит оплата?</h4>
+                    <p class="text-slate-500 text-sm italic">Сдельная работа. Закончили черновой этап — получили деньги. Всё прозрачно, вы сами считаете свои точки.</p>
+                </div>
+                <div class="reveal">
+                    <h4 class="font-bold text-blue-500 mb-2 uppercase text-sm">Берете ли вы без опыта?</h4>
+                    <p class="text-slate-500 text-sm italic">Да, если есть желание учиться и «глаза горят». Начнёшь помощником, научим всему.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 text-center bg-blue-600 text-black">
+        <div class="reveal max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-8xl font-black uppercase italic mb-10 leading-none italic">ЖДЕМ <br> ТЕБЯ</h2>
+            <p class="text-xl font-bold mb-12 uppercase italic">Хватит искать подработки. Стань частью стабильной команды AKIM.PRO.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="tel:+996755000228" class="bg-black text-white px-12 py-7 rounded-2xl font-black uppercase text-sm tracking-[0.3em] shadow-2xl hover:scale-105 transition-all">Позвонить: +996 755 000 228</a>
+            </div>
+            <div class="mt-16 flex justify-center gap-10">
+                <a href="https://wa.me/996755000228" class="text-4xl hover:scale-125 transition-all"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/ta07as" class="text-4xl hover:scale-125 transition-all"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://instagram.com/ta07as.a" class="text-4xl hover:scale-125 transition-all"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-black text-center text-white/10 italic">
+        <p class="text-[10px] font-black tracking-[2em] uppercase">AKIM PROFESSIONAL • HIRED • 2026</p>
     </footer>
 
-    <div class="fixed bottom-0 left-0 w-full flex bg-[#0a0a0a] border-t-4 border-yellow-500 h-[75px] z-[9999]">
-        <a href="/ProTalas/" class="sw-btn">
-            <i class="fa fa-bolt text-lg"></i><span>АВАРИЯ</span>
-        </a>
-        <a href="/ProTalas/Про/" class="sw-btn">
-            <i class="fa fa-hard-hat text-lg"></i><span>ПРОРАБ</span>
-        </a>
-        <a href="/ProTalas/нанимать/" class="sw-btn active-hire">
-            <i class="fa fa-user-plus text-lg"></i><span>НАЙМ</span>
-        </a>
-    </div>
-
+    <script>
+        window.addEventListener('load', () => {
+            ScrollReveal().reveal('.reveal', {
+                delay: 200, distance: '50px', origin: 'bottom', duration: 1200, interval: 150, cleanup: true
+            });
+        });
+    </script>
 </body>
 </html>
