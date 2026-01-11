@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKIM.PRO — ПРОРАБ (B2B)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Manrope:wght@400;800&display=swap');
+        body { background: #000; color: #fff; font-family: 'Manrope', sans-serif; padding-bottom: 90px; }
+        .sw-btn { flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 10px; font-weight: 900; color: #fff; text-decoration: none; border-right: 1px solid #222; gap: 4px; }
+        .active-pro { background: #2563eb; color: #fff; }
+    </style>
+</head>
+<body>
+    <nav class="p-5 border-b-4 border-blue-600 bg-blue-950/20 flex justify-between items-center italic">
+        <b class="text-xl">AKIM.PRO <span class="text-blue-600 font-black">INDUSTRIAL</span></b>
+        <span class="text-[10px] bg-blue-600 px-2 py-1 font-bold">B2B</span>
+    </nav>
 
+    <section class="p-10 py-20 bg-gradient-to-b from-blue-900/10 to-transparent">
+        <h1 class="text-5xl font-black uppercase leading-none mb-6 italic">Инженерный <br><span class="text-blue-600 text-6xl">монтаж</span></h1>
+        <p class="text-gray-400 text-lg border-l-4 border-blue-600 pl-4 font-bold italic uppercase">Субподряд в Таласе. Работаем строго по чертежам и СНиП.</p>
+    </section>
+
+    <div class="px-5"><a href="tel:+996755000228" class="block bg-blue-600 p-8 text-center text-black font-black text-2xl uppercase italic">ОБСУДИТЬ ОБЪЕКТ</a></div>
+
+    <section class="p-8 bg-blue-600 text-black mt-10">
+        <h2 class="text-3xl font-black uppercase mb-4 italic">Наш арсенал:</h2>
+        <p class="font-bold italic text-xl uppercase">Hilti / Milwaukee / Bosch. Штробим с пылесосом. Сверлим коронками. Делаем чисто.</p>
+    </section>
+
+    <section class="p-5 space-y-4">
+        <div class="p-4 border-l-4 border-blue-600 bg-white/5 italic"><b>Монтаж ГРЩ и ВРУ</b></div>
+        <div class="p-4 border-l-4 border-blue-600 bg-white/5 italic"><b>Кабельные трассы (лотки)</b></div>
+        <div class="p-4 border-l-4 border-blue-600 bg-white/5 italic"><b>Освещение складов и ТЦ</b></div>
+    </section>
+
+    <footer class="p-10 text-center opacity-30 text-[10px] uppercase">Akim.pro Industrial — 2026</footer>
+
+    <div class="fixed bottom-0 left-0 w-full flex bg-[#111] border-t-4 border-blue-600 h-[75px] z-[9999]">
+        <a href="/ProTalas/" class="sw-btn">
+            <i class="fa fa-bolt text-lg"></i><span>АВАРИЯ</span>
+        </a>
+        <a href="/ProTalas/Про/" class="sw-btn active-pro">
+            <i class="fa fa-hard-hat text-lg"></i><span>ПРОРАБ</span>
+        </a>
+        <a href="/ProTalas/нанимать/" class="sw-btn">
+            <i class="fa fa-user-plus text-lg"></i><span>НАЙМ</span>
+        </a>
+    </div>
+</body>
+</html>
